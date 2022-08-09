@@ -21,7 +21,7 @@ export default defineNuxtModule<ModuleOptions>({
       addPlugin(resolve(runtimeDir, 'plugin'))
 
       const layoutsDir = fileURLToPath(new URL('./layouts', import.meta.url))
-      const tpl = addTemplate(resolve(layoutsDir, 'custom-layout.vue'))
+      const tpl = addTemplate({ src: resolve(layoutsDir, 'custom-layout.vue'), write: true })
       addLayout(tpl, 'custom')
     }
   }

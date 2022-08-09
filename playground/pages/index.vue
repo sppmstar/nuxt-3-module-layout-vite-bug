@@ -3,6 +3,7 @@
 </template>
 <script>
 export default defineComponent({
-  name: 'HomePage'
+  name: 'HomePage',
+  layout: 'custom'
 })
 </script>
