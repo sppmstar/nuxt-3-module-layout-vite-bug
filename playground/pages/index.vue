@@ -2,8 +2,10 @@
   <div>Home Page</div>
 </template>
 <script>
-export default defineComponent({
-  name: 'HomePage',
+definePageMeta({
   layout: 'custom'
+})
+export default defineComponent({
+  name: 'HomePage'
 })
 </script>
